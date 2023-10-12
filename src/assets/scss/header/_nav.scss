@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  max-width: calc(100% - 200px);
+  gap: 30px;
+
+  &__item {
+    font-family: $poppins;
+    font-size: 18px;
+    gap: 30px;
+    white-space: nowrap;
+    transition: color .2s linear;
+    font-weight: 600;
+
+    &.active, &:hover,  {
+      color: $red
+    }
+  }
+}

@@ -1,7 +1,11 @@
 .container {
   padding: 0 15px;
-  max-width: 1230px;
+  max-width: 1470px;
   margin: 0 auto;
+
+  @include widescreen {
+    max-width: 1230px;
+  }
 
   @include laptop {
     max-width: 960px;

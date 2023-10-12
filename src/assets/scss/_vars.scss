@@ -7,8 +7,24 @@ $mobile: 576px;
 
 //colors
 $yellow: #ffdc59;
-$red: #ffdc59;
-$orange: #ffdc59;
+$red: #b3200f;
+$orange: #f69b70;
+
+$yellow-trans: rgba(255, 220, 89, .1);
+$orange-trans: rgba(246, 155, 112, 1);
+$red-trans: rgba(179, 32, 15, 1);
+
 
 //fonts
+@font-face {
+  font-family: 'connoisseursregular';
+  src: url('../fonts/connoisseurs-webfont.woff2') format('woff2'),
+  url('../fonts/connoisseurs-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $base-fonts: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$poppins: 'Poppins', sans-serif;
+$connoisseurs: 'connoisseurs', cursive;
+

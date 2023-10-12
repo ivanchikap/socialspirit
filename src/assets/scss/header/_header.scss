@@ -1,10 +1,18 @@
 .header {
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, .1);
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
 
   &__top {
     position: relative;
     z-index: 4;
-    background-color: #999;
     padding: 0.5rem;
     min-height: 4rem;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }

@@ -1,0 +1,61 @@
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  min-height: 50rem;
+  padding: 3rem 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 6rem;
+    order: 1;
+
+    span:first-child {
+      display: block;
+    }
+  }
+
+  &__slogan {
+    color: $yellow;
+    font-family: $connoisseurs;
+    font-size: 50px;
+    order: 0;
+  }
+
+  &__desc {
+    font-family: $poppins;
+    font-size: 22px;
+    order: 1;
+    margin-top: 2rem;
+
+    span:first-child {
+      position: relative;
+
+      &::after {
+        content: '';
+        height: 2px;
+        background-color: $yellow;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+
+  &__action {
+    margin-top: 4rem;
+
+    .btn + .btn {
+      margin-left: 3rem;
+    }
+  }
+}
