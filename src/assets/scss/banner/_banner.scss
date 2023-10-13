@@ -2,12 +2,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  min-height: 50rem;
+  min-height: 65rem;
   padding: 3rem 0;
   color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  box-shadow: -6px 10px 14px rgba(0, 0, 0, .2);
+
+  @include tablet {
+    min-height: 55rem;
+  }
+
+  @include mobile {
+    min-height: 50rem;
+  }
 
   &__container {
     text-align: center;
@@ -17,6 +26,18 @@
     font-size: 6rem;
     order: 1;
 
+    @include tablet {
+      font-size: 4.8rem;
+    }
+
+    @include mobile-large {
+      font-size: 3.6rem;
+    }
+
+    @include mobile {
+      font-size: 3.2rem;
+    }
+
     span:first-child {
       display: block;
     }
@@ -24,16 +45,28 @@
 
   &__slogan {
     color: $yellow;
-    font-family: $connoisseurs;
-    font-size: 50px;
+    font-family: 'connois', cursive;
+    font-size: 5rem;
     order: 0;
+
+    @include tablet {
+      font-size: 4.2rem;
+    }
+
+    @include mobile-large {
+      font-size: 3.6rem;
+    }
   }
 
   &__desc {
     font-family: $poppins;
-    font-size: 22px;
+    font-size: 2.2rem;
     order: 1;
     margin-top: 2rem;
+
+    @include tablet {
+      font-size: 2rem;
+    }
 
     span:first-child {
       position: relative;
@@ -54,8 +87,27 @@
   &__action {
     margin-top: 4rem;
 
-    .btn + .btn {
-      margin-left: 3rem;
+    .btn {
+
+      @include mobile-large {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @include mobile {
+        max-width: 90%;
+      }
+
+      & + .btn {
+        margin-left: 3rem;
+
+        @include mobile-large {
+          margin-left: auto;
+          margin-top: 2rem;
+        }
+      }
     }
   }
 }

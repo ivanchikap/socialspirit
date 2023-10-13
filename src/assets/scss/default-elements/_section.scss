@@ -1,10 +1,20 @@
 .section {
   padding: 6rem 0;
 
+  @include mobile-large {
+    padding: 4rem 0;
+  }
+
   &__title {
     font-family: $poppins;
     font-size: 5rem;
     text-align: center;
     margin-bottom: 4rem;
+    text-transform: capitalize;
+
+    @include mobile-large {
+      font-size: 4.4rem;
+      margin-bottom: 3rem;
+    }
   }
 }

@@ -2,6 +2,22 @@
   max-width: 200px;
   padding-right: 2rem;
 
+  .header--fixed  & {
+    max-width: 120px;
+  }
+
+  @include laptop {
+    max-width: 180px;
+  }
+
+  @include tablet {
+    max-width: 170px;
+  }
+
+  @include mobile {
+    max-width: 140px;
+  }
+
   img {
     width: 100%;
     height: 100%;

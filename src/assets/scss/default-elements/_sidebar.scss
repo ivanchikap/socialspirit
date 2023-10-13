@@ -1,14 +1,15 @@
 .sidebar {
-  display: none;
-  width: 300px;
-  height: calc(100vh - 4rem);
+  width: 200px;
+  height: auto;
   padding: 2rem;
 
-  position: relative;
+  position: fixed;
+  right: 0;
+  top: 135px;
   z-index: 4;
 
-  background-color: #ccc;
-  transform: translateX(-101%);
+  background-color: rgba(0, 0, 0, .7);
+  transform: translateX(101%);
   transition: transform .3s linear;
 
   .show-sidebar & {
