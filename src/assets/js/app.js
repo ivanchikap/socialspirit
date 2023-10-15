@@ -1,4 +1,5 @@
-import { debounce } from "debounce";
+import {debounce} from "debounce";
+
 document.addEventListener('DOMContentLoaded', (e) => {
 
     //nav
@@ -11,7 +12,8 @@ document.addEventListener('DOMContentLoaded', (e) => {
     function navHandler(e) {
         e.preventDefault();
         addActive(e.target, e.currentTarget);
-        const blockId = e.target.getAttribute('href').substring(1);
+        const link = e.target.className === 'nav__item' ? e.target : e.target.closest('a');
+        const blockId = link.getAttribute('href').substring(1);
         document.getElementById(blockId).scrollIntoView({
             behavior: "smooth",
             block: "start"
@@ -29,7 +31,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         items.forEach((item) => {
             item.classList.remove('active');
         });
-        element.classList.add('active');
+        element.closest('a').classList.add('active');
     }
 
 

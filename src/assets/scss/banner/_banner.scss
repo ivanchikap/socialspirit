@@ -1,4 +1,5 @@
 .banner {
+  margin-top: 159px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -10,7 +11,12 @@
   justify-content: center;
   box-shadow: -6px 10px 14px rgba(0, 0, 0, .2);
 
+  @include laptop {
+    margin-top: 132px;
+  }
+
   @include tablet {
+    margin-top: 100px;
     min-height: 55rem;
   }
 

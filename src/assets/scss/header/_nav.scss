@@ -20,6 +20,9 @@
     max-width: 100%;
 
     .nav__item {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
       font-weight: 500;
       color: #eee;
     }
