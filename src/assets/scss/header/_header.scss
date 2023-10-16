@@ -3,7 +3,7 @@
     opacity: 0;
     transform: translateY(-51%);
   } to {
-    opacity: 0.8;
+    opacity: 1;
         transform: translateY(0);
       }
 }
@@ -24,7 +24,7 @@
     left: 0;
     top: 0;
     width: 100%;
-    opacity: 0.8;
+    opacity: 1;
     transform: translateY(0);
     animation-name: headerFixed;
     animation-duration: 1s;

@@ -8202,6 +8202,7 @@ footer {
 
 .section {
     padding: 6rem 0;
+    border-bottom: 1px dashed #ffdc59;
 }
 
 @media screen and (max-width: 768px) {
@@ -8210,19 +8211,81 @@ footer {
     }
 }
 
+.section__header {
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        margin-bottom: 3rem;
+    }
+}
+
 .section__title {
     font-family: "Poppins", sans-serif;
     font-size: 5rem;
     text-align: center;
-    margin-bottom: 4rem;
     text-transform: capitalize;
 }
 
 @media screen and (max-width: 768px) {
     .section__title {
         font-size: 4.4rem;
-        margin-bottom: 3rem;
     }
+}
+
+.section__subtitle {
+    max-width: 60%;
+    padding: 1rem;
+    font-size: 20px;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.58);
+    border-radius: 6px;
+}
+
+.section__list {
+    font-size: 1.15rem;
+    line-height: 1.3;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .section__list {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+}
+
+.section__list-item {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+
+.section__list-item::marker {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: block;
+    content: "\f124";
+    font-size: 16px;
+}
+
+.section__list-item:last-child {
+    margin-bottom: 0;
+}
+
+.section__list-item-title {
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.section__list-item-title::after {
+    content: ":";
+    margin-right: 6px;
 }
 
 .a-card {
@@ -8270,7 +8333,7 @@ footer {
     }
 
     to {
-        opacity: 0.8;
+        opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
@@ -8284,7 +8347,7 @@ footer {
     }
 
     to {
-        opacity: 0.8;
+        opacity: 1;
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
@@ -8307,7 +8370,7 @@ footer {
     left: 0;
     top: 0;
     width: 100%;
-    opacity: 0.8;
+    opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
     -webkit-animation-name: headerFixed;
@@ -8547,6 +8610,106 @@ footer {
     .about .col-xs-12:not(:nth-child(-n+1)) {
         margin-top: 3rem;
     }
+}
+
+.services {
+    background-color: #f69b70;
+}
+
+.services__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -18px;
+}
+
+.services__list-item {
+    width: 33.3333%;
+    padding: 18px;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .services__list-item {
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .services__list-item {
+        padding: 5px;
+    }
+}
+
+.services__list-item.ui-tabs-active .services__list-link {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    text-decoration: underline;
+    color: #b3200f;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+}
+
+.services__list-link {
+    color: #efefef;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    background-color: #323232;
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px;
+    font-weight: 500;
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+
+@media screen and (max-width: 576px) {
+    .services__list-link {
+        font-size: 13px;
+    }
+}
+
+.services__list-link:hover, .services__list-link:active {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+    text-decoration: underline;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+}
+
+.services__item-img {
+    background-color: #aaa;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 220px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.services__item-title {
+    display: block;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.services__description {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    border-bottom: 2px dashed #b3200f;
+    padding-bottom: 1rem;
+}
+
+.services__footer {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 8px 0;
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .footer {
