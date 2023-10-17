@@ -2,17 +2,23 @@
   padding: 6rem 0;
   border-bottom: 1px dashed $yellow;
 
+
+  @include tablet {
+    padding: 5rem 0;
+  }
+
   @include mobile-large {
     padding: 4rem 0;
   }
 
   &__header {
     margin-bottom: 4rem;
+
+    @include mobile-large {
+      margin-bottom: 3rem;
+    }
   }
 
-  @include mobile-large {
-    margin-bottom: 3rem;
-  }
 
   &__title {
     font-family: $poppins;
@@ -29,23 +35,29 @@
     max-width: 60%;
     padding: 1rem;
     font-size: 20px;
+    font-weight: 500;
     margin: 1rem auto 0 auto;
     text-align: center;
     box-shadow: 10px 10px 20px -10px rgba(0,0,0,0.58);
     border-radius: 6px;
+
+    @include tablet {
+      max-width: 85%;
+    }
+
+    @include mobile-large {
+      max-width: 90%;
+      font-size: 18px;
+    }
   }
 
   &__list {
     font-size: 1.15rem;
+    padding-left: 15px;
     line-height: 1.3;
     text-align: left;
     font-weight: 400;
     margin-top: 20px;
-
-    @include mobile-large {
-      font-size: 1rem;
-      line-height: 1.2;
-    }
   }
 
   &__list-item {
