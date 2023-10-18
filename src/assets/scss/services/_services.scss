@@ -5,7 +5,7 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -18px;
+    margin: 0 -15px;
 
     @include laptop {
       margin: 0 -12px;

@@ -1,0 +1,25 @@
+.works {
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  &__nav-link {
+    font-family: $poppins;
+    font-weight: 500;
+    margin: 0 2rem;
+    font-size: 2rem;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      text-decoration: underline;
+      color: $red;
+    }
+  }
+}

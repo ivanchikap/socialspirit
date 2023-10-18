@@ -40,8 +40,23 @@
       font-size: 2rem;
     }
 
-    &.active, &:hover,  {
-      color: $red
+    &.active  {
+      color: $red;
+      .nav__icon {
+        fill: $red;
+      }
     }
+
+    &:hover,  {
+      color: $orange;
+      .nav__icon {
+        fill: $orange;
+      }
+    }
+  }
+
+  .nav__icon {
+    height: 22px;
+    fill: #eee;
   }
 }

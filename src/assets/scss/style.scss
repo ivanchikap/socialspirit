@@ -1,9 +1,10 @@
 @import "vars";
 @import "mixins";
+@import "extends";
 @import "reset";
-@import "fontawesome";
 @import "grid";
 @import "base";
+@import "slick";
 
 
 @import "default-elements/all";
@@ -12,4 +13,5 @@
 @import "banner/banner";
 @import "about/about";
 @import "services/services";
+@import "works/works";
 @import "footer/footer";

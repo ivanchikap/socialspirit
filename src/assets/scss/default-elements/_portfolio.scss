@@ -1,0 +1,33 @@
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.5rem;
+
+  @include mobile {
+    margin: -1rem;
+  }
+
+  &__col {
+    display: flex;
+    flex-basis: 33.3333%;
+    max-width: 33.3333%;
+    padding: 1.5rem;
+
+    &.hide {
+      display: none;
+    }
+
+    @include mobile-large {
+      flex-basis: 50%;
+      max-width: 50%;
+    }
+
+    @include mobile {
+      flex-basis: 100%;
+      max-width: 100%;
+      padding: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

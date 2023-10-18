@@ -66,11 +66,9 @@
     padding-left: 12px;
 
     &::marker {
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      display: block;
-      content: "\f124";
-      font-size: 16px;
+      content: '➤';
+      font-size: 20px;
+      line-height: 1;
     }
 
     &:last-child {
