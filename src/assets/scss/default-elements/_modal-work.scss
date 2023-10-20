@@ -24,11 +24,11 @@
   &__content {
     position: relative;
     width: 35%;
-    padding: 5rem 9.6rem 5rem 2.6rem;
+    padding: 5rem 5rem 5rem 2.6rem;
     overflow: auto;
 
     @include laptop {
-      padding: 4rem 8rem 4rem 1.6rem;
+      padding: 4rem 4rem 4rem 1.6rem;
     }
 
     @include tablet {
@@ -131,9 +131,8 @@
 
   &__text {
     margin-bottom: 3.4rem;
-    color: grey;
     font-weight: 300;
-    line-height: 2;
+    line-height: 1.4;
 
     @include tablet {
       margin-bottom: 2rem;

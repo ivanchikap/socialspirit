@@ -21,7 +21,7 @@
     object-fit: contain;
 }
 
-.text-overflow, .work__date, .work__title, .work__cat {
+.text-overflow, .works__nav-link, .work__date, .work__title, .work__cat {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2206,20 +2206,51 @@ footer {
 }
 
 .btn {
-    color: #fff;
     font-size: 16px;
     line-height: 1;
     display: inline-block;
-    padding: 1.2rem 3rem;
     white-space: nowrap;
     border-radius: 1em;
-    border: 2px solid transparent;
     font-weight: 600;
     text-transform: uppercase;
-    background-color: #f69b70;
-    min-width: 242px;
     font-family: "Poppins", sans-serif;
     transition: all 0.2s linear;
+}
+
+.btn--default {
+    padding: 1.2rem 3rem;
+    min-width: 242px;
+}
+
+.btn--small {
+    padding: 0.8rem 2rem;
+}
+
+.btn--orange {
+    color: #fff;
+    background-color: #f69b70;
+    border: 2px solid transparent;
+}
+
+.btn--orange:hover {
+    background-color: transparent;
+    border-color: #f69b70;
+}
+
+.btn--orange .btn__icon {
+    fill: #fff;
+    height: 16px;
+    margin-right: 1rem;
+}
+
+.btn--black {
+    border: 2px solid #212121;
+}
+
+.btn--black:hover {
+    background-color: #f69b70;
+    border-color: transparent;
+    color: #fff;
 }
 
 @media screen and (max-width: 576px) {
@@ -2227,17 +2258,6 @@ footer {
         font-size: 15px;
         padding: 1rem 2.8rem;
     }
-}
-
-.btn__icon {
-    fill: #fff;
-    height: 16px;
-    margin-right: 1rem;
-}
-
-.btn:hover {
-    background-color: transparent;
-    border-color: #f69b70;
 }
 
 .section {
@@ -2391,9 +2411,17 @@ footer {
     box-shadow: 0 0 25px 2px rgba(0, 0, 0, 0.25);
 }
 
+.work:hover .work__img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
 .work__img {
     width: 100%;
     height: 30rem;
+    transition: -webkit-transform 0.3s linear;
+    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
 }
 
 @media screen and (max-width: 1200px) {
@@ -2470,6 +2498,18 @@ footer {
     text-align: center;
 }
 
+@media screen and (max-width: 1200px) {
+    .work__actions {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .work__actions {
+        margin-top: 2rem;
+    }
+}
+
 .portfolio {
     display: -ms-flexbox;
     display: flex;
@@ -2478,7 +2518,7 @@ footer {
     margin: 0 -1.5rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 992px) {
     .portfolio {
         margin: -1rem;
     }
@@ -2487,14 +2527,28 @@ footer {
 .portfolio__col {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: 33.3333%;
-    flex-basis: 33.3333%;
-    max-width: 33.3333%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    max-width: 25%;
     padding: 1.5rem;
 }
 
 .portfolio__col.hide {
     display: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .portfolio__col {
+        -ms-flex-preferred-size: 33.3333%;
+        flex-basis: 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .portfolio__col {
+        padding: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -2699,13 +2753,13 @@ footer {
 .modal-work__content {
     position: relative;
     width: 35%;
-    padding: 5rem 9.6rem 5rem 2.6rem;
+    padding: 5rem 5rem 5rem 2.6rem;
     overflow: auto;
 }
 
 @media screen and (max-width: 1200px) {
     .modal-work__content {
-        padding: 4rem 8rem 4rem 1.6rem;
+        padding: 4rem 4rem 4rem 1.6rem;
     }
 }
 
@@ -2836,9 +2890,8 @@ footer {
 
 .modal-work__text {
     margin-bottom: 3.4rem;
-    color: grey;
     font-weight: 300;
-    line-height: 2;
+    line-height: 1.4;
 }
 
 @media screen and (max-width: 992px) {
@@ -2917,6 +2970,10 @@ footer {
     font-variant: normal;
     text-rendering: auto;
     line-height: 1;
+}
+
+.form {
+    color: #212121;
 }
 
 @-webkit-keyframes headerFixed {
@@ -3417,15 +3474,43 @@ footer {
 .works__nav {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 2rem;
+    gap: 6px 30px;
+}
+
+@media screen and (max-width: 992px) {
+    .works__nav {
+        gap: 6px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .works__nav {
+        gap: 6px 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .works__nav {
+        gap: 8px 40px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .works__nav {
+        max-width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .works__nav-link {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    margin: 0 2rem;
     font-size: 2rem;
     text-align: center;
 }
@@ -3437,6 +3522,99 @@ footer {
 .works__nav-link.active {
     text-decoration: underline;
     color: #b3200f;
+}
+
+.contacts {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.contacts__container {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media screen and (max-width: 992px) {
+    .contacts__container {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contacts__container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.contacts__container--left {
+    color: #f69b70;
+    text-align: right;
+    background-color: #efefef;
+    padding-right: 4rem;
+}
+
+.contacts__container--right {
+    color: #212121;
+    text-align: left;
+    background-color: #f69b70;
+    padding-left: 4rem;
+}
+
+.contacts .contacts__inner {
+    max-width: 720px;
+}
+
+.contacts .contacts__inner--left {
+    padding-left: 15px;
+    margin-left: auto;
+}
+
+.contacts .contacts__inner--right {
+    padding-right: 15px;
+}
+
+.contacts__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    margin-bottom: 1.4rem;
+}
+
+.contacts__desc {
+    color: #212121;
+    max-width: 60%;
+    margin-left: auto;
+    font-size: 18px;
+}
+
+.contacts__item + .contacts__item {
+    margin-top: 2rem;
+}
+
+.contacts__subtitle {
+    position: relative;
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+.contacts__subtitle::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 6rem;
+    background-color: #212121;
 }
 
 .footer {

@@ -3,18 +3,27 @@
   flex-wrap: wrap;
   margin: 0 -1.5rem;
 
-  @include mobile {
+  @include tablet {
     margin: -1rem;
   }
 
   &__col {
     display: flex;
-    flex-basis: 33.3333%;
-    max-width: 33.3333%;
+    flex-basis: 25%;
+    max-width: 25%;
     padding: 1.5rem;
 
     &.hide {
       display: none;
+    }
+
+    @include widescreen {
+      flex-basis: 33.3333%;
+      max-width: 33.3333%;
+    }
+
+    @include tablet {
+      padding: 1rem;
     }
 
     @include mobile-large {

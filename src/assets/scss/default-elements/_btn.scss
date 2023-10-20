@@ -1,32 +1,53 @@
 .btn {
-  color: #fff;
   font-size: 16px;
   line-height: 1;
   display: inline-block;
-  padding: 1.2rem 3rem;
+
   white-space: nowrap;
   border-radius: 1em;
-  border: 2px solid transparent;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: $orange;
-  min-width: 242px;
   font-family: $poppins;
   transition: all .2s linear;
+
+  &--default {
+    padding: 1.2rem 3rem;
+    min-width: 242px;
+  }
+
+  &--small {
+    padding: .8rem 2rem;
+  }
+
+  &--orange {
+    color: #fff;
+    background-color: $orange;
+    border: 2px solid transparent;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $orange;
+    }
+
+    .btn__icon {
+      fill: #fff;
+      height: 16px;
+      margin-right: 1rem;
+    }
+  }
+
+  &--black {
+    border: 2px solid $black;
+
+    &:hover {
+      background-color: $orange;
+      border-color: transparent;
+      color: #fff;
+    }
+  }
 
   @include mobile {
     font-size: 15px;
     padding: 1rem 2.8rem;
-  }
-
-  &__icon {
-    fill: #fff;
-    height: 16px;
-    margin-right: 1rem;
-  }
-
-  &:hover {
-    background-color: transparent;
-    border-color: $orange;
   }
 }

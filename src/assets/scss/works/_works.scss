@@ -2,16 +2,36 @@
 
   &__nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2rem;
+    gap: 6px 30px;
+
+    @include tablet {
+      gap: 6px 20px;
+    }
+
+    @include mobile-large {
+      gap: 6px 15px;
+    }
+
+    @include mobile {
+      gap: 8px 40px;
+    }
+
+    @include mobile {
+      max-width: 370px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__nav-link {
     font-family: $poppins;
     font-weight: 500;
-    margin: 0 2rem;
     font-size: 2rem;
     text-align: center;
+    @extend .text-overflow;
 
     &:hover {
       text-decoration: underline;

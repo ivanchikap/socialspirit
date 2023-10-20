@@ -8,12 +8,11 @@ body {
   min-height: 100vh;
 
   font-family: $base-fonts;
-  color: #212121;
+  color: $black;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.2;
-  background-color: #efefef;
-
+  background-color: $grey-bg;
 
   &.no-scroll {
     overflow: hidden;
