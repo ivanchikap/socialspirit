@@ -1,6 +1,7 @@
 .contacts {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   &__container {
     flex: 0 0 50%;
@@ -83,5 +84,11 @@
       width: 6rem;
       background-color: $black;
     }
+  }
+
+  &__item-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1rem;
   }
 }

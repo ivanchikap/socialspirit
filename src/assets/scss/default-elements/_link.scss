@@ -1,0 +1,16 @@
+.link {
+  //display: flex;
+  //align-items: center;
+  font-size: 18px;
+  line-height: 1;
+
+  &__icon {
+    height: 18px;
+    //fill: $yellow;
+    margin-right: 4px;
+  }
+
+  span {
+    line-height: 1;
+  }
+}

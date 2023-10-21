@@ -2976,6 +2976,20 @@ footer {
     color: #212121;
 }
 
+.link {
+    font-size: 18px;
+    line-height: 1;
+}
+
+.link__icon {
+    height: 18px;
+    margin-right: 4px;
+}
+
+.link span {
+    line-height: 1;
+}
+
 @-webkit-keyframes headerFixed {
     from {
         opacity: 0;
@@ -3529,6 +3543,8 @@ footer {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .contacts__container {
@@ -3615,6 +3631,12 @@ footer {
     height: 3px;
     width: 6rem;
     background-color: #212121;
+}
+
+.contacts__item-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1rem;
 }
 
 .footer {
