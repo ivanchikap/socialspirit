@@ -1,3 +1,55 @@
 .form {
   color: $black;
+  margin-bottom: 3rem;
+  max-width: 80%;
+  margin-left: auto;
+
+  @include tablet {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  @include mobile-large {
+    max-width: 80%;
+  }
+
+  @include mobile {
+    max-width: 95%;
+  }
+
+  &__title {
+    color: $black;
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+
+  &__label {
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  &__label-text {
+    font-size: 14px;
+    color: lighten($black, 10%);
+    display: block;
+    text-align: left;
+    margin-bottom: 2px;
+  }
+  &__input {
+    width: 100%;
+    padding: 10px 6px;
+    border-bottom: 1px solid $black;
+    border-radius: 1em;
+
+    &:active, &:focus {
+      box-shadow: 0 4px 2px -2px rgba($orange, 0.2), 0px 2px 2px 0px rgba($orange, 0.14), 0px 2px 4px 0px rgba($orange, 0.12);
+      border-color: $orange;
+    }
+
+    &--textarea {
+      margin-bottom: 1rem;
+      min-height: 76px;
+      max-height: 200px;
+    }
+  }
 }

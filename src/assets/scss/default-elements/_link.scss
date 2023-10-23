@@ -1,16 +1,19 @@
 .link {
-  //display: flex;
-  //align-items: center;
-  font-size: 18px;
-  line-height: 1;
+  font-size: 20px;
+  font-weight: 500;
+  @extend .text-overflow;
+  
+  &:hover {
+    text-decoration: underline;
+  }
 
   &__icon {
-    height: 18px;
-    //fill: $yellow;
+    height: 20px;
     margin-right: 4px;
+    vertical-align: bottom;
   }
 
   span {
-    line-height: 1;
+    line-height: 1.4;
   }
 }
