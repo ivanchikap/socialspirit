@@ -2,6 +2,23 @@ import {debounce} from "debounce";
 
 document.addEventListener('DOMContentLoaded', (e) => {
 
+    //banner links
+    const exploreServices = document.getElementById('explore-s');
+    const getIbTouch = document.getElementById('get-in-touch');
+
+    exploreServices.addEventListener('click', scrollToSection)
+    getIbTouch.addEventListener('click', scrollToSection)
+
+    function scrollToSection(e) {
+        e.preventDefault();
+        const link = e.target.className === 'btn' ? e.target : e.target.closest('a');
+        const blockId = link.getAttribute('href').substring(1);
+        document.getElementById(blockId).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    }
+
     //nav
     const nav = document.querySelector('.nav--header');
     const navSidebar = document.querySelector('.nav--sidebar');
