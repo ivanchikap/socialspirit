@@ -7,7 +7,7 @@
   font-style: normal;
 }
 
-.img-cover, .modal-work__preview img, .work__img img {
+.img-cover, .response__badge img, .modal-work__preview img, .work__img img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -3054,6 +3054,119 @@ footer {
     line-height: 1.4;
 }
 
+.response {
+    text-align: center;
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5rem 3rem;
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+    min-height: 326px;
+}
+
+@media screen and (max-width: 768px) {
+    .response {
+        width: 94%;
+        padding: 4rem 2rem 1rem 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .response {
+        width: 98%;
+        padding: 4rem 1.5rem 1rem 1.5rem;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.response__badge {
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    width: 65px;
+    height: 65px;
+    border-radius: 1em;
+    overflow: hidden;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: gray;
+}
+
+.response__name {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .response__name {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .response__name {
+        font-size: 2.5rem;
+    }
+}
+
+.response__type {
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    margin: 1rem 0 3rem 0;
+}
+
+@media screen and (max-width: 768px) {
+    .response__type {
+        font-size: 1.9rem;
+        margin: 0.6rem 0 1.6rem 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .response__type {
+        font-size: 1.8rem;
+    }
+}
+
+.response__type span:first-child {
+    position: relative;
+    margin-right: 4px;
+}
+
+.response__type span:first-child::after {
+    content: "";
+    height: 2px;
+    background-color: #ffdc59;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.response__text {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 768px) {
+    .response__text {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .response__text {
+        font-size: 16px;
+    }
+}
+
 @-webkit-keyframes headerFixed {
     from {
         opacity: 0;
@@ -3771,6 +3884,90 @@ footer {
         gap: 10px 30px;
         -ms-flex-pack: start;
         justify-content: flex-start;
+    }
+}
+
+.testimonial__slider-item {
+    padding: 3rem 6px;
+}
+
+@media screen and (max-width: 576px) {
+    .testimonial__slider-item {
+        padding: 3rem 6px 6px 6px;
+    }
+}
+
+.testimonial .slick-arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    color: #545454;
+    transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 992px) {
+    .testimonial .slick-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial .slick-arrow {
+        top: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .testimonial .slick-arrow {
+        display: none;
+    }
+}
+
+.testimonial .slick-arrow:hover {
+    color: #212121;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial .slick-arrow.slick-next {
+    right: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .testimonial .slick-arrow.slick-next {
+        right: -10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial .slick-arrow.slick-next {
+        right: 16px;
+    }
+}
+
+.testimonial .slick-arrow.slick-prev {
+    left: 0;
+}
+
+@media screen and (max-width: 992px) {
+    .testimonial .slick-arrow.slick-prev {
+        left: -10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial .slick-arrow.slick-prev {
+        left: 16px;
     }
 }
 
