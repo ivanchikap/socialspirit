@@ -7,6 +7,13 @@
     text-decoration: underline;
   }
 
+  &--list {
+    &::before {
+      content: '•';
+      margin-right: 4px;
+    }
+  }
+
   &__icon {
     height: 20px;
     margin-right: 4px;
