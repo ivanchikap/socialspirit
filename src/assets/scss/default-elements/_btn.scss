@@ -46,6 +46,15 @@
     }
   }
 
+  &--black2 {
+    border: 2px solid $black;
+
+    &:hover {
+      background-color: $black;
+      color: #fff;
+    }
+  }
+
   @include mobile {
     font-size: 15px;
     padding: 1rem 2.8rem;

@@ -9,17 +9,12 @@
 
   &__col {
     display: flex;
-    flex-basis: 25%;
-    max-width: 25%;
+    flex-basis: 33.3333%;
+    max-width: 33.3333%;
     padding: 1.5rem;
 
     &.hide {
       display: none;
-    }
-
-    @include widescreen {
-      flex-basis: 33.3333%;
-      max-width: 33.3333%;
     }
 
     @include tablet {

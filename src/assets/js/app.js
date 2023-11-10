@@ -2,12 +2,12 @@ import {debounce} from "debounce";
 
 document.addEventListener('DOMContentLoaded', (e) => {
 
-    //banner links
-    const exploreServices = document.getElementById('explore-s');
-    const getIbTouch = document.getElementById('get-in-touch');
+    //all links anchors
+    const links = document.querySelectorAll('.btn--anchor');
 
-    exploreServices.addEventListener('click', scrollToSection)
-    getIbTouch.addEventListener('click', scrollToSection)
+    links.forEach((link) => {
+        link.addEventListener('click', scrollToSection)
+    })
 
     function scrollToSection(e) {
         e.preventDefault();

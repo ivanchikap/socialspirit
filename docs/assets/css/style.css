@@ -21,7 +21,7 @@
     object-fit: contain;
 }
 
-.text-overflow, .footer__contact, .works__nav-link, .link, .work__date, .work__title, .work__cat {
+.text-overflow, .footer__contact, .works__nav-link, .link, .work__date, .work__cat {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2253,6 +2253,15 @@ footer {
     color: #fff;
 }
 
+.btn--black2 {
+    border: 2px solid #212121;
+}
+
+.btn--black2:hover {
+    background-color: #212121;
+    color: #fff;
+}
+
 @media screen and (max-width: 576px) {
     .btn {
         font-size: 15px;
@@ -2352,7 +2361,6 @@ footer {
 .section__list-item-title {
     font-weight: 600;
     font-style: italic;
-    text-transform: uppercase;
 }
 
 .section__list-item-title::after {
@@ -2399,7 +2407,7 @@ footer {
 
 .work {
     width: 100%;
-    max-width: 37rem;
+    max-width: 40rem;
     margin: auto;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px 10px 0 0;
@@ -2527,22 +2535,14 @@ footer {
 .portfolio__col {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-preferred-size: 25%;
-    flex-basis: 25%;
-    max-width: 25%;
+    -ms-flex-preferred-size: 33.3333%;
+    flex-basis: 33.3333%;
+    max-width: 33.3333%;
     padding: 1.5rem;
 }
 
 .portfolio__col.hide {
     display: none;
-}
-
-@media screen and (max-width: 1440px) {
-    .portfolio__col {
-        -ms-flex-preferred-size: 33.3333%;
-        flex-basis: 33.3333%;
-        max-width: 33.3333%;
-    }
 }
 
 @media screen and (max-width: 992px) {
@@ -3654,7 +3654,7 @@ footer {
     margin-right: auto;
     padding: 8px 0;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -3669,6 +3669,10 @@ footer {
     .services__footer {
         max-width: 90%;
     }
+}
+
+.services__footer > .btn {
+    margin-top: 10px;
 }
 
 .works__nav {

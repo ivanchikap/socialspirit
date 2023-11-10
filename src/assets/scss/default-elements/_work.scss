@@ -1,6 +1,6 @@
 .work {
   width: 100%;
-  max-width: 37rem;
+  max-width: 40rem;
   margin: auto;
   box-shadow: 0 0 4px rgba(#000, .25);
   border-radius: 10px 10px 0 0;
@@ -62,7 +62,6 @@
   &__title {
     display: block;
     width: 80%;
-    @extend .text-overflow;
 
     &:hover {
       text-decoration: underline;
