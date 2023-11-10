@@ -2590,11 +2590,12 @@ footer {
 .modal__dialog {
     position: relative;
     width: 100%;
-    max-width: 120rem;
+    max-width: 90%;
     max-height: 90vh;
     margin: auto;
     overflow: auto;
     background-color: #efefef;
+    border-radius: 20px;
     -webkit-transform: rotateX(90deg);
     transform: rotateX(90deg);
     transition: -webkit-transform 0.2s linear;

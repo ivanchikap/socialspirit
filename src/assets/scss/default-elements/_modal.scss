@@ -16,11 +16,12 @@
   &__dialog {
     position: relative;
     width: 100%;
-    max-width: 120rem;
+    max-width: 90%;
     max-height: 90vh;
     margin: auto;
     overflow: auto;
     background-color: #efefef;
+    border-radius: 20px;
     transform: rotateX(90deg);
     transition: transform .2s linear;
 
