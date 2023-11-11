@@ -2228,13 +2228,13 @@ footer {
 
 .btn--orange {
     color: #fff;
-    background-color: #f69b70;
+    background-color: #FFCADC;
     border: 2px solid transparent;
 }
 
 .btn--orange:hover {
     background-color: transparent;
-    border-color: #f69b70;
+    border-color: #FFCADC;
 }
 
 .btn--orange .btn__icon {
@@ -2248,7 +2248,7 @@ footer {
 }
 
 .btn--black:hover {
-    background-color: #f69b70;
+    background-color: #FFCADC;
     border-color: transparent;
     color: #fff;
 }
@@ -2316,8 +2316,6 @@ footer {
     font-weight: 500;
     margin: 1rem auto 0 auto;
     text-align: center;
-    box-shadow: 10px 10px 20px -10px rgba(0, 0, 0, 0.58);
-    border-radius: 6px;
 }
 
 @media screen and (max-width: 992px) {
@@ -2391,7 +2389,7 @@ footer {
     cursor: pointer;
     width: 30px;
     height: 30px;
-    fill: #f37940;
+    fill: #ff97ba;
     position: fixed;
     right: 20px;
     bottom: 80px;
@@ -3026,8 +3024,8 @@ footer {
 }
 
 .form__input:active, .form__input:focus {
-    box-shadow: 0 4px 2px -2px rgba(246, 155, 112, 0.2), 0px 2px 2px 0px rgba(246, 155, 112, 0.14), 0px 2px 4px 0px rgba(246, 155, 112, 0.12);
-    border-color: #f69b70;
+    box-shadow: 0 4px 2px -2px rgba(255, 202, 220, 0.2), 0px 2px 2px 0px rgba(255, 202, 220, 0.14), 0px 2px 4px 0px rgba(255, 202, 220, 0.12);
+    border-color: #FFCADC;
 }
 
 .form__input--textarea {
@@ -3303,11 +3301,11 @@ footer {
 }
 
 .nav__item:hover {
-    color: #f69b70;
+    color: #FFCADC;
 }
 
 .nav__item:hover .nav__icon {
-    fill: #f69b70;
+    fill: #FFCADC;
 }
 
 .nav .nav__icon {
@@ -3481,10 +3479,6 @@ footer {
     }
 }
 
-.services {
-    background-color: #f69b70;
-}
-
 .services__list {
     display: -ms-flexbox;
     display: flex;
@@ -3549,15 +3543,14 @@ footer {
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
     text-decoration: underline;
-    color: #b3200f;
-    background-color: #111;
+    background-color: #FFCADC;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
 }
 
 .services__list-link {
-    color: #efefef;
+    color: #212121;
     box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
-    background-color: #323232;
+    background-color: #fff;
     border-radius: 4px;
     text-align: center;
     padding: 8px;
@@ -3763,7 +3756,7 @@ footer {
 }
 
 .contacts__container--left {
-    color: #f69b70;
+    color: #FFCADC;
     text-align: right;
     background-color: #efefef;
     padding-right: 4rem;
@@ -3785,7 +3778,7 @@ footer {
 .contacts__container--right {
     color: #212121;
     text-align: left;
-    background-color: #f69b70;
+    background-color: #FFCADC;
     padding-left: 4rem;
 }
 
@@ -4011,7 +4004,7 @@ footer {
 }
 
 .footer__company {
-    color: #f69b70;
+    color: #FFCADC;
     font-size: 18px;
 }
 
@@ -4041,7 +4034,7 @@ footer {
 }
 
 .footer__link:hover {
-    fill: #f69b70;
+    fill: #FFCADC;
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
 }
@@ -4093,5 +4086,5 @@ footer {
 }
 
 .footer__contact:hover {
-    color: #f69b70;
+    color: #FFCADC;
 }
